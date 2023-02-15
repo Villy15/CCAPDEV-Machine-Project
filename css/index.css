@@ -40,3 +40,7 @@ header {
 .nav-links li a:hover{
     color: blue;
 }
+
+main {
+    padding: 5px 200px;
+}
