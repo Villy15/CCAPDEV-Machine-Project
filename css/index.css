@@ -44,3 +44,19 @@ header {
 main {
     padding: 5px 200px;
 }
+
+footer {
+    padding: 30px 15%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+footer span {
+    padding-right: 20px;
+}
+
+.logo-footer {
+    margin-right: auto;
+    width: 100px;
+}
