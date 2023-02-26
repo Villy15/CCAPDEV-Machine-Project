@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Schoolbell&display=swap');
+:root {
+    --links: blue;
+}
+body {
+    font-family: 'Schoolbell', cursive;
+}
+
+.logo {
+    width: 150px;
+}

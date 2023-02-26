@@ -1,3 +1,7 @@
+header {
+    background-color: lightsalmon;
+}
+
 .product-container {
     padding: 5px 100px;
     display: flex;
@@ -6,10 +10,56 @@
 
 .product-image {
     width: 350px;
+    border: 1px solid;
+    margin-left: 30px;
+    margin-top: 10px;
 }
+
+.review-section {
+    padding: 20px 200px;
+    border: 1px solid;
+}
+
+.review-header {
+    text-align: center;
+    background-color: #4783D7;
+    color: white;
+}
+.review {
+    margin: 15px auto;
+}
+
+.profile-picture {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+
+.star-rating {
+    display: inline;
+    height: 30px;
+    width: 30px;
+}
+
+.user-review {
+    text-align: justify;
+    font-size: 13px;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.username {
+    text-align: center;
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
 
 .branch-other-products-container{
     padding: 5px 100px;
+    background-color: #DCE1E2;
 }
 
 .product-grid {
