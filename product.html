@@ -7,6 +7,10 @@
         <title>Product Sample</title>
         <link rel="stylesheet" href="css/index.css">
         <link rel="stylesheet" href="css/product.css">
+        <link rel="stylesheet" href="css/review.css">
+
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <script src="./js/script.js"></script>
     </head>
     <body>
         <header>
@@ -39,61 +43,37 @@
             </div>
         </section>
         <section class="review-section"> 
-            <div class="review"> 
-                <div> 
-                    <h1 class="review-header"> USER REVIEWS </h1>
+            <h1 class="review-header"> USER REVIEWS </h1>
+            <div id="reviews"> 
+                <div class="reviews-container">
+                    <div class="user-details">
+                        <div class="user-picture">
+                            <img class="profile-picture" src="images/users/villy.jpeg" alt="pfp">
+                        </div>
+                        <div class="user-name">Villy</div>
+                    </div>
+                    <div class="review-details">
+                        <div class="review-ratings">
+                            <img class="star-rating" src="images/reviewer-imgs/star-review.png" alt="rate"> 
+                            <img class="star-rating" src="images/reviewer-imgs/star-review.png" alt="rate"> 
+                            <img class="star-rating" src="images/reviewer-imgs/star-review.png" alt="rate"> 
+                            <img class="star-rating" src="images/reviewer-imgs/star-review.png" alt="rate"> 
+                            <img class="star-rating" src="images/reviewer-imgs/star-review.png" alt="rate"> 
+                        </div>
+                        <div class="review-date">2/26/2023 5:53 PM</div>
+                        <div class="review-branch">Toys R Us</div>
+                        <div class="review-comment">
+                            Ang ganda ganda naman ng product! Hindi ko inakala na mint condition talaga ang binili ko. 
+                            Will order again once may chance hehe. Thank you Mr. Jaz Campanilla!
+                        </div>
+                    </div>
                 </div>
-                <table> 
-                    <tr> 
-                        <td> 
-                            <span> <img class="profile-picture" src="images/reviewer-imgs/villyyy_7.jpeg" alt="pfp"> </span>
-                            
-                            <br> 
-                        </td>
-                        <td> 
-                            <img class="star-rating" src="images/reviewer-imgs/star-review.png" alt="rate"> 
-                            <img class="star-rating" src="images/reviewer-imgs/star-review.png" alt="rate"> 
-                            <img class="star-rating" src="images/reviewer-imgs/star-review.png" alt="rate"> 
-                            <img class="star-rating" src="images/reviewer-imgs/star-review.png" alt="rate"> 
-                            <img class="star-rating" src="images/reviewer-imgs/star-review.png" alt="rate"> 
-                            <br> 
-                            <span class="user-review"> 
-                                Ang ganda ganda naman ng product! Hindi ko inakala na mint condition talaga ang binili ko. 
-                                Will order again once may chance hehe. Thank you Mr. Jaz Campanilla!
-                            </span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td> <span class="username"> villy </span> </td>
-                    </tr>
-                </table>
             </div>
-            <div class="review"> 
-                <table> 
-                    <tr> 
-                        <td> 
-                            <span> <img class="profile-picture" src="images/reviewer-imgs/jaz_campanilla.jpeg" alt="pfp"> </span>
-                            
-                            <br> 
-                        </td>
-                        <td> 
-                            <img class="star-rating" src="images/reviewer-imgs/star-review.png" alt="rate"> 
-                            <img class="star-rating" src="images/reviewer-imgs/star-review.png" alt="rate"> 
-                            <img class="star-rating" src="images/reviewer-imgs/star-review.png" alt="rate"> 
-                            <img class="star-rating" src="images/reviewer-imgs/star-review.png" alt="rate"> 
-                            <img class="star-rating" src="images/reviewer-imgs/star-review.png" alt="rate"> 
-                            <br> 
-                            <span class="user-review"> 
-                                Ang ganda ganda naman ng product! Hindi ko inakala na mint condition talaga ang binili ko. 
-                                Will order again once may chance hehe. Thank you Mr. Jaz Campanilla!
-                            </span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td> <span class="username"> jaz </span> </td>
-                        <td> </td>
-                    </tr>
-                </table>
+            <div id="review-submit">
+                <form name="review-form" id="review-form">
+                    <textarea name="review-body" id="review-body" placeholder="Write a Review about this product"></textarea>
+	                <input type="submit" name="submit-review" id="submit-review" value="Submit review">
+                </form>
             </div>
         </section>
         <section class="branch-other-products-container">

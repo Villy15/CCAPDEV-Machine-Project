@@ -1,0 +1,21 @@
+.reviews-container {
+    display: flex;
+}
+
+.review-details > *{
+    padding-top: 5px;
+}
+
+.user-details {
+    padding: 10px;
+}
+
+.user-name {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+textarea#review-body {
+	width: 100%
+}
