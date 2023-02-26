@@ -1,6 +1,7 @@
 let Review = function(name, rating, date, branch, comment) {
-    this.picture = "./images/users/" + name + ".jpeg";
     this.name = name;
+    this.name = this.name.toLowerCase();
+    this.picture = "./images/users/" + this.name + ".jpeg";
     this.rating = rating;
     this.date = date;
     this.branch = branch;
@@ -11,10 +12,12 @@ let ratings_src = "./images/reviewer-imgs/star-review.png";
 let reviews = [];
 
 document.addEventListener("DOMContentLoaded", function() {
+    refreshDisplay(reviews);
+    let today = new Date(); // Gets today's date
 
     document.querySelector("#submit-review")?.addEventListener("click", function(e) {
 		e.preventDefault();  // Prevents page refresh
-        let today = new Date(); // Gets today's date
+        today = new Date(); // Gets today's date
 
         let comment = $("#review-body").val(); // Gets user's comment
 
@@ -24,6 +27,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
         refreshDisplay(reviews); //
     });
+    
+
+    testReview1 = new Review("villy", 2, today, "Toys R Us", " Ang ganda ganda naman ng product! Hindi ko inakala na mint condition talaga ang binili ko.  Will order again once may chance hehe. Thank you Mr. Jaz Campanilla!"); // Creates new Review Object
+    testReview2 = new Review("jaz", 4, today, "Toy Kingdom", "I love you Toy Kingdom");
+    reviews.push(testReview1, testReview2);
+    refreshDisplay(reviews);
 
     // Refreshes the reviews section according to the review contents of displayedReviews
 	function refreshDisplay(reviews) {
