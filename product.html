@@ -45,12 +45,34 @@
         <section class="review-section"> 
             <h1 class="review-header"> USER REVIEWS </h1>
             <div id="reviews"></div>
-            <div id="review-submit">
-                <form name="review-form" id="review-form">
-                    <textarea name="review-body" id="review-body" placeholder="Write a Review about this product"></textarea>
-	                <input type="submit" name="submit-review" id="submit-review" value="Submit review">
-                </form>
-            </div>
+            <form name="review-form" id="review-form">
+                <div class="review-container"> 
+                    <div class="user-details">
+                        <div> <img class="profile-picture" src="./images/users/villy.jpeg"> </div>
+                        <div class="username">villyyy_7</div>
+                    </div>
+                    <div class="review-details"> 
+                        <div>
+                            <img class="star" src="images/reviewer-imgs/Empty_Star.svg"> 
+                            <img class="star" src="images/reviewer-imgs/Empty_Star.svg"> 
+                            <img class="star" src="images/reviewer-imgs/Empty_Star.svg"> 
+                            <img class="star" src="images/reviewer-imgs/Empty_Star.svg"> 
+                            <img class="star" src="images/reviewer-imgs/Empty_Star.svg"> 
+                        </div>
+                        <div class="store">
+                            <label for="stores">Select a Store: </label>
+                            <select class="avail-stores" name="stores">
+                                <option value="ToysRUs">ToysRUs</option>
+                                <option value="ToyKingdom">Toy Kingdom</option>
+                                <option value="HotWheels">Hot Wheels</option>
+                                <option value="Funko">Funko</option>
+                            </select>
+                        </div>
+                        <div> <textarea name="review-body" id="review-body" class="input-review" placeholder="Write a review..."></textarea> </div>
+                    </div>
+                </div>
+                <input type="submit" name="submit-review" id="submit-review" value="Submit review">
+            </form>
         </section>
         <section class="branch-other-products-container">
             <h2>Toys R Us Other Toys</h2>

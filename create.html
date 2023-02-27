@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./css/create.css">
+    </head>
+<body>
+    <header>
+        <a href="index.html"><img class="logo" src="images/logo.png" alt="logo"></a>
+        <div class="navBar">
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Stores</a></li>
+                    <li><a href="create.html">Sign Up</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><div class="search">
+                        <input type="text" placeholder="search">
+                        <a href="#">
+                            <i class="searchButton"><img src="search.png" class="searchIcon"></i>
+                        </a>
+                    </div></li>
+                </ul>
+            </nav>  
+            
+        </div>
+        
+</header>
+    <form class="box" action="home.html" method="post">
+        <h1>Create Account</h1>
+        <hr>
+        <br>
+        <input type = "text" placeholder="First Name" name="firstname" required>
+        <input type = "text" placeholder="Last Name" name="lastname" required>
+        <input type = "text" placeholder="Email" name="email" required>
+        <input type = "text" placeholder="Phone Number" name="phonenumber" required>
+        <input type = "password" placeholder="Password" name="password" required>
+        <input type ="submit" name = "create">
+    </form>
+</body>
+</html>

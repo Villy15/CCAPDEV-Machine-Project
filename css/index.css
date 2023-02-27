@@ -5,25 +5,32 @@
 
 body {
     font-family: 'Schoolbell', cursive;
+    background-image: url(../images/background.jpg);
 }
 
 .logo {
     width: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+    border-radius: 6px;
+    border: 2px solid grey;
+    margin-bottom: 2px;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 5%;
-}
-
-.logo {
-    cursor: pointer;
+.navBar{
+    border-style: solid;
+    border-radius: 6px;
+    border: 1px solid grey;
+    background: #2D85DE;
+    height: 60px;
 }
 
 .nav-links {
     list-style: none;
+    text-align: right;
+    margin-top: 5px;
 }
 
 .nav-links li {
@@ -31,14 +38,50 @@ header {
     padding: 0px 20px;
 }
 
-.nav-links li a{
+.nav-links li a, footer a{
     color: black;
     text-decoration: none;
 
 }
 
-.nav-links li a:hover{
+.nav-links li a:hover, footer a:hover{
     color: blue;
+}
+
+.search{
+    height: 30px;
+    display: flex;
+    cursor: pointer;
+    padding: 10px 20px;
+    background: #fff;
+    border-radius: 30px;
+    align-items: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.search:hover input{
+    width: 400px;
+}
+
+.search a .searchButton{
+    color: #1daf;
+    font-size: 18px;
+}
+
+.search input{
+    width: 0;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    transition: 0.8s;
+    background: transparent;
+}
+
+.searchIcon{
+    width: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 main {
@@ -46,17 +89,146 @@ main {
 }
 
 footer {
-    padding: 30px 15%;
-    display: flex;
-    justify-content: flex-end;
+    padding: 20px 10%;
     align-items: center;
 }
 
-footer span {
-    padding-right: 20px;
+.slider{
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.logo-footer {
-    margin-right: auto;
-    width: 100px;
+.slides{
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 20%;
+    transition: 2s;
+}
+
+.slide img{
+    width: 500px;
+    height: 500px;
+}
+
+.navigation-manual{
+    position: absolute;
+    width: 500px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid #40D3DC;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background: #40D3DC;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -60%;
+}
+
+.auto{
+    position: absolute;
+    display: flex;
+    width: 500px;
+    justify-content: center;
+    margin-top: 460px;
+}
+
+.auto div{
+    border: 2px solid #40D3DC;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .auto .autoButton1{
+    background: #40D3DC;
+}
+
+#radio2:checked ~ .auto .autoButton2{
+    background: #40D3DC;
+}
+
+#radio3:checked ~ .auto .autoButton3{
+    background: #40D3DC;
+}
+
+#radio4:checked ~ .auto .autoButton4{
+    background: #40D3DC;
+}
+
+.featured{
+    width: 300px;
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-top: 10px;
+}
+
+.box a:hover{
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.price{
+    text-align: center;
+    background-color: white;
+    border-radius: 10%;
+}
+
+.shopIcons{
+    margin-left: 2px;
+    margin-right: 2px;
+    width: 285px;
+    height: 250px;
+    border-style: solid;
+    border: 2px solid gray;
+    border-radius: 6px;
+}
+.shops{
+    display: flex;
+    justify-content: center;
+}
+
+.shops a:hover{
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
 }
