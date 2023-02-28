@@ -78,7 +78,6 @@ document.addEventListener("DOMContentLoaded", function() {
                     $("div.search-popup").append(search_product.append(image, name, price));
                 }
             });
-
         });
     });
     
