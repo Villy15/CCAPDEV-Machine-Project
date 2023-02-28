@@ -16,6 +16,7 @@ let Product = function(id, name, price) {
 
 let products = [];
 
+
 document.addEventListener("DOMContentLoaded", function() {
     testProduct1 = new Product("subaru", "Tomica No.06-10 Subaru BRZ", "249.75");
     testProduct2 = new Product("fairlady", "Tomica Fairlady Z Heritage Edition Brilliant White Pearl", "299.75");
@@ -39,4 +40,56 @@ document.addEventListener("DOMContentLoaded", function() {
        $("div#box-products").append($(link).append(product));
        $("div#box-details").append(details);
     }
+
+    $(document).ready(function(){
+        $("input#search-bar").on("input", function(){
+            let search_product = $(this).val();
+
+		    $("div.search-popup").empty();
+
+            fetch('./json/products.json')
+            .then((response) => response.json()) 
+            .then((products) => {
+
+                let key_products = [];
+
+                for (let i = 0; i < products.length; i++) {
+                    if (products[i].name.toLowerCase().includes(search_product.toLowerCase())) {
+                        key_products.push(products[i]);
+                    }
+                }
+
+                console.log(key_products);
+
+                displaySearchProducts(key_products);
+
+                function displaySearchProducts(product) {
+                    for (let i = 0; i < product.length; i++) 
+                        displaySearchProduct(product, i)
+                }
+                
+                function displaySearchProduct(p, i) {
+                    let search_product = $("<div>").addClass("search-product");
+
+                    let image = $("<img>").addClass("search-image").attr("src", p[i].image);
+                    let name = $("<div>").addClass("search-name").text(p[i].name);
+                    let price = $("<div>").addClass("search-price").text(p[i].price);
+                    
+                    $("div.search-popup").append(search_product.append(image, name, price));
+                }
+            });
+
+        });
+    });
+    
+    
+
+    document.querySelector("div.search")?.addEventListener("click", function(e) {
+        $("div.search-popup").css("visibility", "visible");
+    });
+
+    document.querySelector("main")?.addEventListener("click", function(e) {
+        $("div.search-popup").css("visibility", "hidden");
+    });
+    
 });

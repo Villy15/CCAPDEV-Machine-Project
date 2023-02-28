@@ -1,0 +1,27 @@
+[
+    {
+        "name": "Tomica No.06-10 Subaru BRZ",
+        "price": "249.75",
+        "image": "./images/toysruss/tomica-subaru.jpg"
+    }, 
+    {
+        "name": "Tomica Fairlady Z Heritage Edition Brilliant White Pearl",
+        "price": "299.75",
+        "image": "./images/toysruss/tomica-fairlady.jpg"
+    },
+    {
+        "name": "Tomica Honda CR-Z Hybrid",
+        "price": "299.755",
+        "image": "./images/toysruss/tomica-honda.jpg"
+    },
+    {
+        "name": "Tomica Lexus IS F CCS-R",
+        "price": "399.75",
+        "image": "./images/toysruss/tomica-lexus.jpg"
+    },
+    {
+        "name": "Tomica Mazda Axela Sport Official Car",
+        "price": "299.75",
+        "image": "./images/toysruss/tomica-mazda.jpg"
+    }
+]

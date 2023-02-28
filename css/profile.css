@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Schoolbell&display=swap');
+
+* {
+    margin: 0;
+}
+body {
+    background-image: url(../images/background.jpg);
+    font-family: 'Schoolbell', cursive;
+    overflow: hidden;
+}
+.top-navigation {
+    background-color: #f1dc1b;
+    color: #333;
+    box-shadow: 0px 4px 8px 0px grey;
+    height: 70px;
+}
+.title {
+    font-family: 'Schoolbell', cursive;
+    padding-top: 15px;
+    position: absolute;
+    left: 50%;
+}
+.side-navigation {
+    background-color: #2d85de;
+    border-bottom-right-radius: 25px;
+    height: 86%;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+    position: absolute;
+    top: 70px;
+    width: 250px;
+}
+.profile {
+    margin-bottom: 20px;
+    margin-top: -10px;
+    text-align: center;
+}
+.profile img {
+    border-radius: 50%;
+}
+.name {
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 20px;
+    color: #fff;
+}
+.bio {
+    font-size: 12px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+.url, hr {
+    text-align: center;
+}
+.url hr {
+    margin-left: 20%;
+    width: 60%;
+}
+.url a {
+    color: #fff;
+    display: block;
+    font-size: 20px;
+    margin: 10px 0;
+    padding: 6px 8px;
+    text-decoration: none;
+}
+.url a:hover, .url .active {
+    background-color: #e8f5ff;
+    border-radius: 28px;
+    color: #000;
+    margin-left: 14%;
+    width: 65%;
+}
+.main {
+    margin-top: 2%;
+    margin-left: 29%;
+    font-size: 28px;
+    padding: 0 10px;
+    width: 58%;
+}
+.main h4 {
+    color: #2D85DE;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.main .card {
+    background-color: #f1dc1b;
+    border-radius: 18px;
+    height: auto;
+    margin-bottom: 20px;
+    padding: 20px 0 20px 50px;
+}
+
+

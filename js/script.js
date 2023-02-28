@@ -90,4 +90,11 @@ document.addEventListener("DOMContentLoaded", function() {
 	function clearReviews() {
 		$("#reviews").empty();
 	}
+
+
+    let subMenu = document.getElementById("subMenu");
+
+    document.querySelector("img.profile")?.addEventListener("click", function(e) {
+        subMenu.classList.toggle("open-menu");
+	}); 
 });

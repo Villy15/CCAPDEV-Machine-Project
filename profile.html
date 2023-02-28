@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+
+    <link rel="stylesheet" href="./css/profile.css">
+
+</head>
+<body>
+    <div class="top-navigation">
+        <div class="title">
+            <h1>Profile</h1>
+        </div>
+    </div>
+
+    <div class="side-navigation">
+        <div class="profile">
+            <img src="./images/users/pola.jpeg" alt="profile" width="100" height="100"/>
+            <div class="name">
+               <p>Paula Pineda</p>
+            </div>
+            <div class="bio">
+               <p>I love toys</p>
+            </div>
+        </div>
+
+        <div class="sidenav-url">
+            <div class="url">
+                <a href="#profile" class="active">Profile</a>
+                <hr align="center">
+            </div>
+            <div class="url">
+                <a href="#settings">Settings</a>
+                <hr align="center">
+            </div>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="card">
+                <table>
+                    <form class="box" action="home.html" method="post">
+                        <h4>Edit Profile</h4>
+                        <hr>
+                        <br>
+                        <input type = "text" placeholder="First Name" name="firstname" required>
+                        <input type = "text" placeholder="Last Name" name="lastname" required><br>
+                        <input type = "text" placeholder="Email" name="email" required><br>
+                        <input type = "text" placeholder="Phone Number" name="phonenumber" required><br>
+                        <input type = "password" placeholder="Password" name="password" required><br>
+                        <input type ="submit" name = "create">
+                    </form>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

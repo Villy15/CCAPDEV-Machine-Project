@@ -48,6 +48,31 @@ body {
     color: blue;
 }
 
+.search-popup {
+    position: absolute;
+    padding-left: 10px;
+    margin-top: 20px;
+    border: 1px solid black ;
+    width: 400px;
+    text-align: left;
+    visibility: hidden;
+}
+
+.search-product {   
+    border-bottom: 1px solid black ;
+}
+
+.search-image {
+    width: 100px;
+}
+
+.search-name {
+}
+
+.search-price {
+
+}
+
 .search{
     height: 30px;
     display: flex;
@@ -236,4 +261,75 @@ footer {
 
 .shops a:hover{
     box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.profile{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+   cursor: pointer;
+   margin-left: 10px;
+}
+.sub-menu-container{
+    position: inline;
+    top: 100%;
+    right: 10%;
+    width: 320px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+.sub-menu-container.open-menu{
+    max-height: 400px;
+}
+.sub-menu{
+    background-color: white;
+    padding: 20px;
+    margin: 10x;
+}
+.profile-info{
+    display: flex;
+    align-items: center;
+}
+.profile-info h3{
+    font-weight: 500;
+}
+.profile-info img{
+    width: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.sub-menu hr{
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background: #ccc;
+    margin: 15px 0 10px;
+}
+.sub-menu-link{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color:#525252;
+    margin: 12px 0;
+}
+.sub-menu-link p{
+    width: 100%;
+}
+.sub-menu-link img{
+    width: 40px;
+    background: #e5e5e5;
+    border-radius: 50%;
+    padding: 8px;
+    margin-right: 15px;
+}
+.sub-menu-link span{
+    font-size: 22px;
+    transition: transform 0.5s;
+}
+.sub-menu-link:hover span{
+    transform: translateX(5px);
+}
+.sub-menu-link:hover p{
+    font-weight: 600;
 }
