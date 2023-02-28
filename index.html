@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>D Kidz At Heart</title>
         <link rel="stylesheet" href="./css/index.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
         <script src="./js/index.js"></script>
     </head>
     <body>
@@ -18,15 +19,14 @@
                             <li><a href="#">Stores</a></li>
                             <li><a href="create.html">Sign Up</a></li>
                             <li><a href="login.html">Login</a></li>
-                            <li><div class="search">
-                                <input type="text" placeholder="search">
-                                <a href="#">
-                                    <i class="searchButton"><img src="search.png" class="searchIcon"></i>
-                                </a>
-                            </div></li>
+                            <li>
+                                <div class="search">
+                                    <input type="text" placeholder="search">
+                                    <a href="#"><i class="searchButton"><img src="search.png" class="searchIcon"></i></a>
+                                </div>
+                            </li>
                         </ul>
-                    </nav>  
-                    
+                    </nav>    
                 </div>
                 
         </header>
@@ -66,56 +66,19 @@
                     <label for="radio4" class="manual-btn"></label>
                 </div>
             </div>
-            <br>
-            <div>
+            <div class="products-display">
                 <h1>New Arrivals</h1>
                 <div class="box">
-                    <table>
-                        <tr class="box-space">
-                            <td><a href="product.html"><img class="featured" src="images/toysrus/06-10.jpg"></a></td>
-                            <td><a href="product.html"><img class="featured" src="images/toysrus/06-11.jpg"></a></td>
-                            <td><a href="product.html"><img class="featured" src="images/toysrus/06-12.webp"></a></td>
-                            <td><a href="product.html"><img class="featured" src="images/toysrus/06-13.webp"></a></td>
-                            <td><a href="product.html"><img class="featured" src="images/toysrus/06-14.jpg"></a></td>
-                            <td><a href="product.html"><img class="featured" src="images/toysrus/06-11.jpg"></a></td>
-                            <td><a href="product.html"><img class="featured" src="images/toysrus/06-12.webp"></a></td>
-                        </tr>
-                        <tr>
-                            <td class="price">500</td>
-                            <td class="price">500</td>
-                            <td class="price">500</td>
-                            <td class="price">500</td>
-                            <td class="price">500</td>
-                            <td class="price">500</td>
-                            <td class="price">500</td>
-                        </tr>
-                    </table>
+                    <div class="box-space" id="box-products"></div>
+                    <div class="box-space" id="box-details"></div>
                 </div>
             </div>
             <br>
             <div>
                 <h1>Featured Products</h1>
                 <div class="box">
-                    <table>
-                        <tr>
-                            <td><a href="product.html"><img class="featured" src="images/toysrus/06-10.jpg"></a></td>
-                            <td><a href="product.html"><img class="featured" src="images/toysrus/06-11.jpg"></a></td>
-                            <td><a href="product.html"><img class="featured" src="images/toysrus/06-12.webp"></a></td>
-                            <td><a href="product.html"><img class="featured" src="images/toysrus/06-13.webp"></a></td>
-                            <td><a href="product.html"><img class="featured" src="images/toysrus/06-14.jpg"></a></td>
-                            <td><a href="product.html"><img class="featured" src="images/toysrus/06-11.jpg"></a></td>
-                            <td><a href="product.html"><img class="featured" src="images/toysrus/06-12.webp"></a></td>
-                        </tr>
-                        <tr>
-                            <td class="price">500</td>
-                            <td class="price">500</td>
-                            <td class="price">500</td>
-                            <td class="price">500</td>
-                            <td class="price">500</td>
-                            <td class="price">500</td>
-                            <td class="price">500</td>
-                        </tr>
-                    </table>
+                    <div class="box-space" id="box-products"></div>
+                    <div class="box-space" id="box-details"></div>
                 </div>
             </div>
             <br>

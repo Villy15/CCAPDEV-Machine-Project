@@ -198,21 +198,26 @@ footer {
     background: #40D3DC;
 }
 
+.box-space {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
 .featured{
     width: 300px;
-    margin-left: 2px;
-    margin-right: 2px;
-    margin-top: 10px;
+    border: 1px solid black;
 }
 
 .box a:hover{
     box-shadow: 0 10px 25px rgba(0,0,0,0.3);
 }
 
-.price{
+.product-details{
     text-align: center;
     background-color: white;
     border-radius: 10%;
+    width: 300px;
 }
 
 .shopIcons{
