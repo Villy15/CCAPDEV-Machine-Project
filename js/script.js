@@ -8,6 +8,7 @@ let Review = function(name, rating, date, branch, comment) {
     this.comment = comment; 
 }
 
+
 let ratings_src = "../images/reviewer-imgs/star-review.png";
 let reviews = [];
 
@@ -29,9 +30,12 @@ document.addEventListener("DOMContentLoaded", function() {
     });
     
 
-    testReview1 = new Review("villy", 2, today, "Toys R Us", " Ang ganda ganda naman ng product! Hindi ko inakala na mint condition talaga ang binili ko.  Will order again once may chance hehe. Thank you Mr. Jaz Campanilla!"); // Creates new Review Object
-    testReview2 = new Review("jaz", 4, today, "Toy Kingdom", "I love you Toy Kingdom");
-    reviews.push(testReview1, testReview2);
+    testReview1 = new Review("villy", 5, today, "Toys R Us", "Very accomodating store and excellent packaging"); // Creates new Review Object
+    testReview2 = new Review("jaz", 4, today, "Toy Kingdom", "Slight dent on the product but overall okay");
+    testReview3 = new Review("anthony", 5, today, "Toy Kingdom", "Best so far");
+    testReview4 = new Review("pola", 2, today, "Toy Kingdom", "Bad packaging and lots of cracks");
+    testReview5 = new Review("anon", 3, today, "Toy Kingdom", "Delivery was so slow");
+    reviews.push(testReview1, testReview2, testReview3, testReview4, testReview5);
     refreshDisplay(reviews);
 
     // Refreshes the reviews section according to the review contents of displayedReviews
