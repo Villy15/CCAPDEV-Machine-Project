@@ -81,6 +81,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 });
             })
         }
+    }
 
     deleteReviews();
 
