@@ -52,6 +52,26 @@ header {
     line-height: 15px;
 }
 
+.dropdown-container {
+    padding: 0 1120px;
+}
+
+.ellipsis {
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    position: absolute;
+    display: none;
+}
+
+.dropdown-container:hover .dropdown-menu {
+    display: block;
+}
+
+
 .review {
     margin: 15px auto;
 }
