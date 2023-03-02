@@ -1,14 +1,14 @@
 let Review = function(name, rating, date, branch, comment) {
     this.name = name;
     this.name = this.name.toLowerCase();
-    this.picture = "./images/users/" + this.name + ".jpeg";
+    this.picture = "../images/users/" + this.name + ".jpeg";
     this.rating = rating;
     this.date = date;
     this.branch = branch;
     this.comment = comment; 
 }
 
-let ratings_src = "./images/reviewer-imgs/star-review.png";
+let ratings_src = "../images/reviewer-imgs/star-review.png";
 let reviews = [];
 
 document.addEventListener("DOMContentLoaded", function() {

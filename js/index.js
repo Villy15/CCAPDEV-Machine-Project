@@ -1,4 +1,5 @@
 var counter = 1;
+
 setInterval(function(){
     document.getElementById('radio' + counter).checked = true;
     counter++;
@@ -14,8 +15,8 @@ let Product = function(id, name, price) {
     this.picture = "./images/toysruss/tomica-" + id + ".jpg";
 }
 
-let products = [];
 
+let products = [];
 
 document.addEventListener("DOMContentLoaded", function() {
     testProduct1 = new Product("subaru", "Tomica No.06-10 Subaru BRZ", "249.75");
@@ -33,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     function displayProduct(p) {        
-        let link = $("<a>").attr("href", "product.html");
+        let link = $("<a>").attr("href", "./products/product-" + p.id + ".html");
         let product = $("<img>").addClass("featured").attr("src", p.picture);
         let details = $("<span>").addClass("product-details").text(p.name + " P " + p.price);
 
@@ -49,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
             fetch('./json/products.json')
             .then((response) => response.json()) 
-            .then((products) => {
+            .then((products) => { 
 
                 let key_products = [];
 

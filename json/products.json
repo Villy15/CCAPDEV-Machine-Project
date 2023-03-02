@@ -2,26 +2,51 @@
     {
         "name": "Tomica No.06-10 Subaru BRZ",
         "price": "249.75",
-        "image": "./images/toysruss/tomica-subaru.jpg"
+        "image": "../images/toysruss/tomica-subaru.jpg"
     }, 
     {
         "name": "Tomica Fairlady Z Heritage Edition Brilliant White Pearl",
         "price": "299.75",
-        "image": "./images/toysruss/tomica-fairlady.jpg"
+        "image": "../images/toysruss/tomica-fairlady.jpg"
     },
     {
         "name": "Tomica Honda CR-Z Hybrid",
         "price": "299.755",
-        "image": "./images/toysruss/tomica-honda.jpg"
+        "image": "../images/toysruss/tomica-honda.jpg"
     },
     {
         "name": "Tomica Lexus IS F CCS-R",
         "price": "399.75",
-        "image": "./images/toysruss/tomica-lexus.jpg"
+        "image": "../images/toysruss/tomica-lexus.jpg"
     },
     {
         "name": "Tomica Mazda Axela Sport Official Car",
         "price": "299.75",
-        "image": "./images/toysruss/tomica-mazda.jpg"
+        "image": "../images/toysruss/tomica-mazda.jpg"
+    },
+    {
+        "name": "Funko Gold James Harden",
+        "price": "600.00",
+        "image": "../images/funko/funko-harden.jpg"
+    }, 
+    {
+        "name": "Funko Gold Luka Doncic",
+        "price": "600.00",
+        "image": "../images/funko/funko-doncic.jpg"
+    },
+    {
+        "name": "Funko Gold Allen Iverson",
+        "price": "600.00",
+        "image": "../images/funko/funko-iverson.jpg"
+    },
+    {
+        "name": "Funko Gold Jimi Hendrix",
+        "price": "600.00",
+        "image": "../images/funko/funko-hendrix.jpg"
+    },
+    {
+        "name": "Funko Gold Slash",
+        "price": "600.00",
+        "image": "../images/funko/funko-slash.jpg"
     }
 ]
